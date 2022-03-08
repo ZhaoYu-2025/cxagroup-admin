@@ -1,2 +1,2 @@
 # cxagroup-admin
-cxagroup-ui 后台管理系统
+cxagroup-ui 后台管理系统.
