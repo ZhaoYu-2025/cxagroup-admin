@@ -1,6 +1,6 @@
 import App from './App.vue'
 import { createApp } from 'vue'
-import { router, setupRouter } from '/@/router'
+import { setupRouter } from '/@/router'
 import { setupStore } from '/@/store'
 
 function bootstrap() {

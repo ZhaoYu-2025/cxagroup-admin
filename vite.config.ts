@@ -2,8 +2,6 @@ import vue from '@vitejs/plugin-vue';
 import type { UserConfig, ConfigEnv } from 'vite';
 import { defineConfig } from 'vite';
 import { resolve } from 'path';
-import { generateModifyVars } from './build/generate/generateModifyVars';
-// import ViteComponents, { AntDesignVueResolver } from 'vite-plugin-components';
 
 function pathResolve(dir: string) {
   return resolve(process.cwd(), '.', dir);
@@ -45,7 +43,6 @@ export default defineConfig(({ command, mode }: ConfigEnv): UserConfig => {
     css: {
       preprocessorOptions: {
         less: {
-          modifyVars: generateModifyVars(),
           javascriptEnabled: true,
         },
       },
